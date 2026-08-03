@@ -1,8 +1,4 @@
----@diagnostic disable: undefined-global
--- █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀█ █░█ █░░ █▀▀ █▀
--- ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █▀▄ █▄█ █▄▄ ██▄ ▄█
---
--- See https://wiki.hyprland.org/Configuring/Window-Rules/
+-- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
 -- Browsers
 hl.window_rule({ opacity = "0.90 0.90", match = "class:^(firefox)$" })

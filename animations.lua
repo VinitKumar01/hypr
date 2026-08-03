@@ -1,12 +1,8 @@
----@diagnostic disable: undefined-global
--- ▄▀█ █▄░█ █ █▀▄▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█
--- █▀█ █░▀█ █ █░▀░█ █▀█ ░█░ █ █▄█ █░▀█
---
--- See https://wiki.hyprland.org/Configuring/Animations/
--- this file can be edited manually or use animation selector to select animations
+-- See https://wiki.hypr.land/Configuring/Basics/Variables/#animations
+-- This file can be edited manually or use animation selector to select animations
 
--- disable animations while in hyprpicker and selection screenshot
+-- Disable animations while in hyprpicker and selection screenshot
 hl.dsp.exec_raw("layerrule = no_anim on, match:namespace hyprpicker")
 hl.dsp.exec_raw("layerrule = no_anim on, match:namespace selection")
 
-dofile(os.getenv("HOME") .. "/.config/hypr/animations/animations-optimized.lua")
+require("animations.animations-optimized")

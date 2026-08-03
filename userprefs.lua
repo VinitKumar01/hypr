@@ -1,6 +1,3 @@
----@diagnostic disable: undefined-global
--- █░█ █▀ █▀▀ █▀█   █▀█ █▀█ █▀▀ █▀▀ █▀
--- █▄█ ▄█ ██▄ █▀▄   █▀▀ █▀▄ ██▄ █▀░ ▄█
+-- Set your personal Hyprland configuration overrides here
+-- Loaded after core defaults so package updates improve defaults without rewriting user config.
 
--- Set your personal hyprland configuration here
--- For a sample file, please refer to https://github.com/prasanthrangan/hyprdots/blob/main/Configs/.config/hypr/userprefs.t2

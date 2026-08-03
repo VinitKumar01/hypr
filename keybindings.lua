@@ -1,6 +1,4 @@
----@diagnostic disable: undefined-global
--- █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █ █▄░█ █▀▀ █▀
--- █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ █ █░▀█ █▄█ ▄█
+-- See https://wiki.hypr.land/Configuring/Basics/Binds/
 
 local mainMod = "SUPER"
 local scrPath = os.getenv("HOME") .. "/.local/share/bin"
