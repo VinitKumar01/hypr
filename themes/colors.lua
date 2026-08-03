@@ -1,0 +1,3 @@
+---@diagnostic disable: undefined-global
+-- Wallbash color override (initially empty)
+-- Colors will be written here by wallbash scripts

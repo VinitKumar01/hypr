@@ -1,0 +1,109 @@
+---@diagnostic disable: undefined-global
+-- █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀█ █░█ █░░ █▀▀ █▀
+-- ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █▀▄ █▄█ █▄▄ ██▄ ▄█
+--
+-- See https://wiki.hyprland.org/Configuring/Window-Rules/
+
+-- Browsers
+hl.window_rule({ opacity = "0.90 0.90", match = "class:^(firefox)$" })
+hl.window_rule({ opacity = "0.90 0.90", match = "class:^(Google-chrome)$" })
+hl.window_rule({ opacity = "0.90 0.90", match = "class:^(Brave-browser)$" })
+
+-- Editors
+hl.window_rule({ opacity = "0.70 0.70", match = "class:^([Cc]ode)$" })
+hl.window_rule({ opacity = "0.70 0.70", match = "class:^(code-url-handler)$" })
+hl.window_rule({ opacity = "0.70 0.70", match = "class:^(code-insiders-url-handler)$" })
+
+-- Terminals & File Managers
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^(kitty)$" })
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^(org.kde.dolphin)$" })
+
+-- Utilities
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(org.kde.ark)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(nwg-look)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(qt5ct)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(qt6ct)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(kvantummanager)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(org.pulseaudio.pavucontrol)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(blueman-manager)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(nm-applet)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(nm-connection-editor)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(org.kde.polkit-kde-authentication-agent-1)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(polkit-gnome-authentication-agent-1)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(org.freedesktop.impl.portal.desktop.gtk)$" })
+hl.window_rule({ opacity = "0.80 0.70", match = "class:^(org.freedesktop.impl.portal.desktop.hyprland)$" })
+
+-- Media & Games
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^([Ss]team)$" })
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^(steamwebhelper)$" })
+hl.window_rule({ opacity = "0.70 0.70", match = "class:^([Ss]potify)$" })
+hl.window_rule({ opacity = "0.70 0.70", match = "title:^Spotify" })
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^(zen)$" })
+
+-- GTK / Qt Apps
+hl.window_rule({ opacity = "0.90 0.90", match = "class:^(com.github.rafostar.Clapper)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(com.github.tchx84.Flatseal)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(hu.kramo.Cartridges)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(com.obsproject.Studio)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(gnome-boxes)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(vesktop)$" })
+hl.window_rule({ opacity = "1.00 1.00", match = "class:^(discord)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(WebCord)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(ArmCord)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(app.drey.Warp)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(net.davidotek.pupgui2)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(yad)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(Signal)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(io.github.alainm23.planify)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(io.gitlab.theevilskeleton.Upscaler)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(com.github.unrud.VideoDownloader)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(io.gitlab.adhami3310.Impression)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(io.missioncenter.MissionCenter)$" })
+hl.window_rule({ opacity = "0.80 0.80", match = "class:^(io.github.flattool.Warehouse)$" })
+
+-- Floating dialogs & tools
+hl.window_rule({ float = true, match = "class:^(org.kde.dolphin)$,title:^(Progress Dialog — Dolphin)$" })
+hl.window_rule({ float = true, match = "class:^(org.kde.dolphin)$,title:^(Copying — Dolphin)$" })
+hl.window_rule({ float = true, match = "title:^(About Mozilla Firefox)$" })
+hl.window_rule({ float = true, match = "class:^(firefox)$,title:^(Picture-in-Picture)$" })
+hl.window_rule({ float = true, match = "class:^(firefox)$,title:^(Library)$" })
+hl.window_rule({ float = true, match = "class:^(kitty)$,title:^(top)$" })
+hl.window_rule({ float = true, match = "class:^(kitty)$,title:^(btop)$" })
+hl.window_rule({ float = true, match = "class:^(kitty)$,title:^(htop)$" })
+hl.window_rule({ float = true, match = "class:^(vlc)$" })
+hl.window_rule({ float = true, match = "class:^(kvantummanager)$" })
+hl.window_rule({ float = true, match = "class:^(qt5ct)$" })
+hl.window_rule({ float = true, match = "class:^(qt6ct)$" })
+hl.window_rule({ float = true, match = "class:^(nwg-look)$" })
+hl.window_rule({ float = true, match = "class:^(org.kde.ark)$" })
+hl.window_rule({ float = true, match = "class:^(org.pulseaudio.pavucontrol)$" })
+hl.window_rule({ float = true, match = "class:^(blueman-manager)$" })
+hl.window_rule({ float = true, match = "class:^(nm-applet)$" })
+hl.window_rule({ float = true, match = "class:^(nm-connection-editor)$" })
+hl.window_rule({ float = true, match = "class:^(org.kde.polkit-kde-authentication-agent-1)$" })
+hl.window_rule({ float = true, match = "class:^(Signal)$" })
+hl.window_rule({ float = true, match = "class:^(com.github.rafostar.Clapper)$" })
+hl.window_rule({ float = true, match = "class:^(app.drey.Warp)$" })
+hl.window_rule({ float = true, match = "class:^(net.davidotek.pupgui2)$" })
+hl.window_rule({ float = true, match = "class:^(yad)$" })
+hl.window_rule({ float = true, match = "class:^(eog)$" })
+hl.window_rule({ float = true, match = "class:^(io.github.alainm23.planify)$" })
+hl.window_rule({ float = true, match = "class:^(io.gitlab.theevilskeleton.Upscaler)$" })
+hl.window_rule({ float = true, match = "class:^(com.github.unrud.VideoDownloader)$" })
+hl.window_rule({ float = true, match = "class:^(io.gitlab.adhami3310.Impression)$" })
+hl.window_rule({ float = true, match = "class:^(io.missioncenter.MissionCenter)$" })
+
+-- Common modals
+hl.window_rule({ float = true, match = "title:^(Open)$" })
+hl.window_rule({ float = true, match = "title:^(Choose Files)$" })
+hl.window_rule({ float = true, match = "title:^(Save As)$" })
+hl.window_rule({ float = true, match = "title:^(Confirm to replace files)$" })
+hl.window_rule({ float = true, match = "title:^(File Operation Progress)$" })
+hl.window_rule({ float = true, match = "class:^(xdg-desktop-portal-gtk)$" })
+
+-- Layer rules
+hl.layer_rule({ blur = true, ignore_alpha = 0, match = "namespace:rofi" })
+hl.layer_rule({ blur = true, ignore_alpha = 0, match = "namespace:notifications" })
+hl.layer_rule({ blur = true, ignore_alpha = 0, match = "namespace:swaync-notification-window" })
+hl.layer_rule({ blur = true, ignore_alpha = 0, match = "namespace:swaync-control-center" })
+hl.layer_rule({ blur = true, match = "namespace:logout_dialog" })
