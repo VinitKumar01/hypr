@@ -7,8 +7,8 @@ hl.window_rule({ opacity = "0.90 0.90", match = { class = "^(Brave-browser)$" } 
 
 -- Editors
 hl.window_rule({ opacity = "0.70 0.70", match = { class = "^([Cc]ode)$" } })
-hl.window_rule({ opacity = "0.70 0.70", match = { class = "^(code-url-handler)$" } })
-hl.window_rule({ opacity = "0.70 0.70", match = { class = "^(code-insiders-url-handler)$" } })
+hl.window_rule({ opacity = "0.10 0.10", match = { class = "^(code-url-handler)$" } })
+hl.window_rule({ opacity = "0.10 0.10", match = { class = "^(code-insiders-url-handler)$" } })
 
 -- Terminals & File Managers
 hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(kitty)$" } })
