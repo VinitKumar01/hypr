@@ -1,9 +1,14 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
 -- Browsers
-hl.window_rule({ opacity = "0.90 0.90", match = { class = "^(firefox)$" } })
-hl.window_rule({ opacity = "0.90 0.90", match = { class = "^(Google-chrome)$" } })
-hl.window_rule({ opacity = "0.90 0.90", match = { class = "^(Brave-browser)$" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(firefox)$" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(Google-chrome)$" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(brave-browser)$" } })
+
+-- Websites
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(brave-browser)$", title = ".*Gemini.*" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(brave-browser)$", title = ".*Claude.*" } })
+hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(brave-browser)$", title = ".*YouTube.*" } })
 
 -- Editors
 hl.window_rule({ opacity = "0.70 0.70", match = { class = "^([Cc]ode)$" } })
@@ -15,6 +20,7 @@ hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(kitty)$" } })
 hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(org.kde.dolphin)$" } })
 
 -- Utilities
+hl.window_rule({ opacity = "0.70 0.70", match = { class = "^(kitty)$", title = "^(btop)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(org.kde.ark)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(nwg-look)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(qt5ct)$" } })
@@ -43,7 +49,8 @@ hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(hu.kramo.Cartridges
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(com.obsproject.Studio)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(gnome-boxes)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(vesktop)$" } })
-hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(discord)$" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(discord)$" } })
+hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(Motrix)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(WebCord)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(ArmCord)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(app.drey.Warp)$" } })
