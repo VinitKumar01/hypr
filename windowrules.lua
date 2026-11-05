@@ -3,7 +3,7 @@
 -- Browsers
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(firefox)$" } })
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(Google-chrome)$" } })
-hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(brave-browser)$" } })
+hl.window_rule({ opacity = "1.00 1.00", match = { class = "^(brave-browser)$" } })
 
 -- Websites
 hl.window_rule({ opacity = "0.80 0.80", match = { class = "^(brave-browser)$", title = ".*Gemini.*" } })

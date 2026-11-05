@@ -1,7 +1,11 @@
 -- Learn how to configure Hyprland: https://wiki.hypr.land/Configuring/Start/
 
 -- Add ~/.config/hypr to Lua package path for modular require loading
-package.path = os.getenv("HOME") .. "/.config/hypr/?.lua;" .. os.getenv("HOME") .. "/.config/hypr/?/init.lua;" .. package.path
+package.path = os.getenv("HOME")
+	.. "/.config/hypr/?.lua;"
+	.. os.getenv("HOME")
+	.. "/.config/hypr/?/init.lua;"
+	.. package.path
 
 local scrPath = os.getenv("HOME") .. "/.local/share/bin"
 
@@ -19,6 +23,9 @@ hl.env("GDK_SCALE", "1")
 
 -- General compositor configuration
 hl.config({
+	render = {
+		cm_auto_hdr = 0,
+	},
 	dwindle = {
 		preserve_split = true,
 	},
